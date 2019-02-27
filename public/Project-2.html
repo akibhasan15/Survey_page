@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+    <title>Document</title>
+    
+ <style>
+     *{
+         box-sizing: border-box;
+     }
+     #survey-form{
+         background-color: #2F4F4F;
+         display:table;
+         width: 70%;
+         border-radius:4px;
+         box-shadow: 0 0 10px 3px grey; 
+         margin:auto;
+         padding: 5% 5% 10% 5%;
+         color: aliceblue;
+
+         
+
+     }
+     body{
+         background-color:rgb(226, 216, 216);
+         display: block;
+         
+         font-family: 'IBM Plex Sans', sans-serif;
+     }
+     #title{
+         text-align: center;
+         font-size: 27px;
+         background-color: rgb(243, 243, 243);
+         padding: 15px;
+
+     }
+     #description{
+         text-align: center;
+         font-size: 16px;
+         padding:0 0 15px 0px;
+     }
+ #div1{
+     width: 50%;
+     height:140px;
+     border: 0px solid;
+    float: left;
+    margin: 0px 0 0 0;
+    padding-top:0px; 
+    
+    
+ }
+ #div2{
+    width: 48%;
+    float:left;
+    margin: 0px 0 0 0;
+    padding:0px 0 0 0;
+    border-left: 0px solid; 
+    height: 140px;
+    
+ }
+  #name-label,#number-label,#email-label{
+     
+     
+     font-size:17px;
+    
+     display:block; 
+     text-align:end;
+     padding: 3px 0 16px 0;   
+     
+ }
+  form #div1 p{
+     text-align: end;
+     font-size: 16px;
+     padding: 0;
+     margin: 0;
+ }
+ form p{
+     text-align: center;
+     font-size: 18px;
+     font-style: italic;
+     font-weight: bold;
+     padding:0px 0 20px 0;
+     margin: -20px 0 0px 0;
+
+ }
+ #name,#email,#number{
+     
+     margin:0px 0 10px 2px; 
+     padding:5px; 
+     display: block;
+     border: 0;
+     width:200px;
+     height:30px;
+     border: 3px solid rgb(40, 38, 43);
+     
+ }
+
+label[for="improve"]{
+    display: block;
+    text-align:start;
+    padding: 5px 0px 10px 4px;
+    
+}
+label[for="meant"]
+{
+    display: block;
+    text-align:start;
+    padding: 5px 0px 10px 4px;
+}
+textarea{
+    padding: 10px;
+    margin: 0px 0 0 5px;
+    border: 3px solid hsl(183, 50%,56%);
+    color:darkslategrey;
+    font-weight: bold;
+    border-radius: 2px;
+}
+#submit{
+    border: 3px solid  hsl(183, 50%,56%);
+    display: block;
+    padding:7px;
+    margin: 5px;
+    color:white;
+    font-weight: bold;
+    background-color:black;
+    border-radius:2px; 
+
+}
+#dropdown{
+    margin: 0 0 0  3px;
+    border: 3px solid rgb(43, 41, 41);
+    padding: 5px;
+    
+}
+
+  
+ </style>
+</head>
+<body>
+    <h1 id="title">Survey Page</h1>
+    <p id="description">A <strong>survey page </strong>for Website Service performance.</p>
+   
+   
+    <form action="" id="survey-form">
+        <p>Help Us Provide Below information:</p>
+    
+    
+        <div id="div1">
+        <label id="name-label" for="name" >*Enter your Name:</label>
+        <label id="email-label" for="email">*Email:</label>
+        <label id="number-label" for="number">*Age:</label>
+
+    </div>
+    
+    <div id="div2">
+        <input type="text" name="name3"id="name" required>
+         <input type="text" name="name3" id="email" required>
+        <input type="number" name="Name3" id="number" min="18" max="125" required>
+    </div>
+    
+    <div id="div1" ><p>*Your role in our society:</p></div>
+    <div id="div2">
+        <select name="" id="dropdown">
+            <option disabled value="">Select an option</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <Option value="Businessman">Businessman</Option>
+        </select>
+    </div>
+    <div id="div1">
+
+    <p>*What kind of stuff should we do to immprove website:</p>
+    </div>
+
+    <div id="div2">
+   <label for="improve"><input type="checkbox" name="name1" id="improve" value="Ranking">Ranking</label> 
+   <label for="improve"><input type="checkbox" name="name1" value="Challenge">Challenge</label>
+  <label for="improve"><input type="checkbox" id="improve"name="name1" value="Games">Games</label>
+  <label for="improve"><input type="checkbox" name="name1" id="improve" value="Others">Others</label>
+    
+    </div>
+
+    
+    <div id="div1">
+        <p>*How much our website meant for you:</p>
+    </div>
+ <div id="div2">
+     <label for="meant"><input type="radio" name="name">Good</label>
+     <label for="meant"><input type="radio" name="name">Average</label>
+     <label for="meant"><input type="radio" name="name">Poor</label>
+ </div>   
+ <div id="div1">
+    <p>*Any comments or suggestions:</p>
+ </div>
+
+ <div id="div2">
+<textarea name="" id="" cols="30" rows="10" placeholder="Comments..."> Comments.....</textarea>
+<input type="submit" id="submit"> 
+</div>
+</form>
+        </body>
+</html>
